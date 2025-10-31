@@ -1,0 +1,309 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.0.2",
+  "pathMappings": {
+    "@my-org/*": [
+      "libs/*"
+    ],
+    "shared": [
+      "shared/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps",
+        "serveStaticTargetName": "serve-static"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".dockerignore",
+        "hash": "1182156113918336548"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "8454364158051912542"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "12469589252068091122"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "11778791130053259017"
+      },
+      {
+        "file": "README.md",
+        "hash": "16382510167388934733"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "14251860480076486824"
+      },
+      {
+        "file": "error.log",
+        "hash": "558682433862130126"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "10770449096712831357"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10981188630859996313"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "4908285535168550425"
+      },
+      {
+        "file": "package.json",
+        "hash": "6432174764550089767"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "7585389904804878146"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "1715769599390479693"
+      }
+    ],
+    "projectFileMap": {
+      "shared": [
+        {
+          "file": "libs/shared/README.md",
+          "hash": "10464589154510889842"
+        },
+        {
+          "file": "libs/shared/eslint.config.mjs",
+          "hash": "4313095032450400554",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/shared/package.json",
+          "hash": "7413960783536880558",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/shared/project.json",
+          "hash": "3557597336902163653"
+        },
+        {
+          "file": "libs/shared/src/index.ts",
+          "hash": "15721632429446788800"
+        },
+        {
+          "file": "libs/shared/src/lib/shared.ts",
+          "hash": "3815621113879200261"
+        },
+        {
+          "file": "libs/shared/tsconfig.json",
+          "hash": "6159797437362864955"
+        },
+        {
+          "file": "libs/shared/tsconfig.lib.json",
+          "hash": "9908975088309596753"
+        }
+      ],
+      "gateway": [
+        {
+          "file": "apps/gateway/Dockerfile",
+          "hash": "12286917662582329849"
+        },
+        {
+          "file": "apps/gateway/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/gateway/package-lock.json",
+          "hash": "4228320836493064284"
+        },
+        {
+          "file": "apps/gateway/package.json",
+          "hash": "9871060341462705554"
+        },
+        {
+          "file": "apps/gateway/project.json",
+          "hash": "16739627399907376759"
+        },
+        {
+          "file": "apps/gateway/src/app/app.controller.ts",
+          "hash": "15276891910009544695",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/app/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/gateway/src/main.ts",
+          "hash": "18439549920479404845",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/gateway/tsconfig.app.json",
+          "hash": "6642416146672581015"
+        },
+        {
+          "file": "apps/gateway/tsconfig.json",
+          "hash": "3025378044812449119"
+        },
+        {
+          "file": "apps/gateway/webpack.config.js",
+          "hash": "8192978861929147149",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "client": [
+        {
+          "file": "apps/client/.swcrc",
+          "hash": "2742566327615098680"
+        },
+        {
+          "file": "apps/client/Dockerfile",
+          "hash": "2958179038619021188"
+        },
+        {
+          "file": "apps/client/eslint.config.mjs",
+          "hash": "10818484782922660641",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@eslint/compat",
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/client/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/client/next-env.d.ts",
+          "hash": "1320675027584673186"
+        },
+        {
+          "file": "apps/client/next.config.js",
+          "hash": "5443563404894739361",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/client/package-lock.json",
+          "hash": "18254278635958535"
+        },
+        {
+          "file": "apps/client/package.json",
+          "hash": "12843870739216463205"
+        },
+        {
+          "file": "apps/client/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "apps/client/project.json",
+          "hash": "7285331396551704205"
+        },
+        {
+          "file": "apps/client/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/client/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/client/src/app/api/hello/route.ts",
+          "hash": "495073956729887886"
+        },
+        {
+          "file": "apps/client/src/app/global.css",
+          "hash": "291024361394925992"
+        },
+        {
+          "file": "apps/client/src/app/layout.tsx",
+          "hash": "7795103938959886508"
+        },
+        {
+          "file": "apps/client/src/app/page.tsx",
+          "hash": "12617679231668879598"
+        },
+        {
+          "file": "apps/client/tailwind.config.js",
+          "hash": "5937918000814531646"
+        },
+        {
+          "file": "apps/client/tsconfig.json",
+          "hash": "1294184825771213129"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "18133133102311300371"
+}

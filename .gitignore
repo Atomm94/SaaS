@@ -1,0 +1,19 @@
+# Node
+node_modules/
+.pnpm-store/
+dist/
+tmp/
+*.log
+.env
+
+# Nx
+.nx/cache/
+.cache/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+.tmp/
+*.log
