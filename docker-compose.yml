@@ -3,25 +3,39 @@ version: '3.9'
 services:
   gateway:
     build:
-      context: ./apps/gateway   # Path to your Nest.js Dockerfile
-      dockerfile: Dockerfile
-    container_name: gateway-service
+      context: .
+      dockerfile: apps/gateway/Dockerfile
+    image: at77/gateway:latest
+    container_name: gateway
     ports:
-      - "3001:3000"           # Expose server on port 3001
+      - "3001:3000"
     environment:
       NODE_ENV: production
-    restart: unless-stopped
+    depends_on:
+      - client
 
   client:
     build:
-      context: ./apps/client   # Path to your Next.js Dockerfile
-      dockerfile: Dockerfile
-    container_name: client-app
+      context: .
+      dockerfile: apps/client/Dockerfile
+    image: at77/client:latest
+    container_name: client
     ports:
-      - "3000:3000"           # Expose Next.js on port 3000
+      - "3000:3000"
     environment:
       NODE_ENV: production
-      NEXT_PUBLIC_API_URL: http://localhost:3000  # If client calls server
-    depends_on:
-      - gateway
-    restart: unless-stopped
+
+  opensearch:
+    image: opensearchproject/opensearch:latest
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+      - "9600:9600"
+
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:latest
+    environment:
+      - OPENSEARCH_HOSTS=http://opensearch:9200
+    ports:
+      - "5601:5601"

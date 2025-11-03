@@ -8,7 +8,16 @@
     "build": "nx build",
     "lint": "nx lint",
     "test": "nx test",
-    "format": "nx format:write"
+    "format": "nx format:write",
+    "prepare": "husky",
+    "prisma:generate": "prisma generate --schema=apps/gateway/prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema=apps/gateway/prisma/schema.prisma"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "private": true,
   "devDependencies": {
@@ -29,6 +38,7 @@
     "@nx/web": "22.0.2",
     "@nx/webpack": "22.0.2",
     "@nx/workspace": "22.0.2",
+    "@prisma/client": "^6.18.0",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.6.0",
     "@swc/core": "~1.5.7",
@@ -44,24 +54,42 @@
     "eslint-plugin-jsx-a11y": "6.10.1",
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "5.0.0",
+    "husky": "^9.1.7",
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "22.0.2",
+    "pino-pretty": "^13.1.2",
     "postcss": "8.4.38",
     "prettier": "^2.6.2",
+    "prisma": "^6.18.0",
     "tailwindcss": "3.4.3",
+    "ts-loader": "^9.5.4",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.14.0",
+    "@grpc/proto-loader": "^0.8.0",
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
+    "@nestjs/microservices": "^11.1.8",
     "@nestjs/platform-express": "^11.0.0",
+    "@nestjs/platform-socket.io": "^11.1.8",
+    "@nestjs/websockets": "^11.1.8",
+    "amqp-connection-manager": "^5.0.0",
+    "bufferutil": "^4.0.9",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "ioredis": "^5.8.2",
+    "kafkajs": "^2.2.4",
+    "mqtt": "^5.14.1",
+    "nats": "^2.29.3",
     "next": "~15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "utf-8-validate": "^6.0.5"
   }
 }

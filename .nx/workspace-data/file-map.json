@@ -2,11 +2,8 @@
   "version": "6.0",
   "nxVersion": "22.0.2",
   "pathMappings": {
-    "@my-org/*": [
-      "libs/*"
-    ],
-    "shared": [
-      "shared/src/index.ts"
+    "@saas/shared": [
+      "libs/shared/src/index.ts"
     ]
   },
   "nxJsonPlugins": [
@@ -42,68 +39,108 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".dockerignore",
-        "hash": "1182156113918336548"
+        "file": ".idea/codeStyles/Project.xml",
+        "hash": "18097235675007435210"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": ".idea/modules.xml",
+        "hash": "971448733582157563"
       },
       {
-        "file": ".github/workflows/ci.yml",
-        "hash": "8454364158051912542"
+        "file": "eslintrc.json",
+        "hash": "11951621424130208215"
       },
       {
         "file": ".gitignore",
-        "hash": "12469589252068091122"
+        "hash": "15219968436107969996"
       },
       {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
+        "file": ".idea/inspectionProfiles/Project_Default.xml",
+        "hash": "8912173605315939135"
       },
       {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
+        "file": "pnpm-lock.yaml",
+        "hash": "5082686431168184088"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "15111676815023576500"
+      },
+      {
+        "file": ".idea/.gitignore",
+        "hash": "10286036308014790964"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "3364563017719869349"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "10227440879197124371"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "7071100841329137639"
       },
       {
         "file": ".vscode/launch.json",
         "hash": "11778791130053259017"
       },
       {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
         "file": "README.md",
         "hash": "16382510167388934733"
       },
       {
-        "file": "docker-compose.yml",
-        "hash": "14251860480076486824"
-      },
-      {
-        "file": "error.log",
-        "hash": "558682433862130126"
+        "file": "package.json",
+        "hash": "13433608651707891368"
       },
       {
         "file": "eslint.config.mjs",
         "hash": "10770449096712831357"
       },
       {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "82581936009064524"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "1182156113918336548"
+      },
+      {
+        "file": ".idea/codeStyles/codeStyleConfig.xml",
+        "hash": "4690022301721055948"
+      },
+      {
+        "file": ".idea/prettier.xml",
+        "hash": "13711802271405639796"
+      },
+      {
         "file": "nx.json",
-        "hash": "10981188630859996313"
+        "hash": "12518976455433926536"
       },
       {
-        "file": "package-lock.json",
-        "hash": "4908285535168550425"
+        "file": ".husky/pre-commit",
+        "hash": "16222163319403417262"
       },
       {
-        "file": "package.json",
-        "hash": "6432174764550089767"
+        "file": ".idea/SaaS.iml",
+        "hash": "2091662290190038625"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "7585389904804878146"
+        "file": ".prettierrc",
+        "hash": "12153210776353704150"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "1715769599390479693"
+        "file": ".github/workflows/ci.yml",
+        "hash": "8454364158051912542"
       }
     ],
     "projectFileMap": {
@@ -123,6 +160,10 @@
           ]
         },
         {
+          "file": "libs/shared/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
           "file": "libs/shared/package.json",
           "hash": "7413960783536880558",
           "deps": [
@@ -134,100 +175,213 @@
           "hash": "3557597336902163653"
         },
         {
-          "file": "libs/shared/src/index.ts",
-          "hash": "15721632429446788800"
-        },
-        {
-          "file": "libs/shared/src/lib/shared.ts",
-          "hash": "3815621113879200261"
-        },
-        {
           "file": "libs/shared/tsconfig.json",
           "hash": "6159797437362864955"
         },
         {
           "file": "libs/shared/tsconfig.lib.json",
-          "hash": "9908975088309596753"
-        }
-      ],
-      "gateway": [
-        {
-          "file": "apps/gateway/Dockerfile",
-          "hash": "12286917662582329849"
-        },
-        {
-          "file": "apps/gateway/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "apps/gateway/package-lock.json",
-          "hash": "4228320836493064284"
-        },
-        {
-          "file": "apps/gateway/package.json",
-          "hash": "9871060341462705554"
-        },
-        {
-          "file": "apps/gateway/project.json",
-          "hash": "16739627399907376759"
-        },
-        {
-          "file": "apps/gateway/src/app/app.controller.ts",
-          "hash": "15276891910009544695",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/gateway/src/app/app.module.ts",
-          "hash": "11673476679848632172",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/gateway/src/app/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/gateway/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/gateway/src/main.ts",
-          "hash": "18439549920479404845",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/gateway/tsconfig.app.json",
-          "hash": "6642416146672581015"
-        },
-        {
-          "file": "apps/gateway/tsconfig.json",
-          "hash": "3025378044812449119"
-        },
-        {
-          "file": "apps/gateway/webpack.config.js",
-          "hash": "8192978861929147149",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
+          "hash": "16315816901362895228"
         }
       ],
       "client": [
+        {
+          "file": "apps/client/.next/app-build-manifest.json",
+          "hash": "7205868890036356358"
+        },
+        {
+          "file": "apps/client/.next/build-manifest.json",
+          "hash": "5125768831124365349"
+        },
+        {
+          "file": "apps/client/.next/cache/.rscinfo",
+          "hash": "14618749660106132215"
+        },
+        {
+          "file": "apps/client/.next/cache/webpack/client-development/0.pack.gz",
+          "hash": "10267945523122416459"
+        },
+        {
+          "file": "apps/client/.next/cache/webpack/client-development/1.pack.gz",
+          "hash": "7827630403630057413"
+        },
+        {
+          "file": "apps/client/.next/cache/webpack/client-development/index.pack.gz",
+          "hash": "17606338003765893730"
+        },
+        {
+          "file": "apps/client/.next/cache/webpack/client-development/index.pack.gz.old",
+          "hash": "8278011276202738200"
+        },
+        {
+          "file": "apps/client/.next/cache/webpack/server-development/0.pack.gz",
+          "hash": "2555050073777849617"
+        },
+        {
+          "file": "apps/client/.next/cache/webpack/server-development/index.pack.gz",
+          "hash": "12152971258100888589"
+        },
+        {
+          "file": "apps/client/.next/cache/webpack/server-development/index.pack.gz.old",
+          "hash": "10209391238301380585"
+        },
+        {
+          "file": "apps/client/.next/package.json",
+          "hash": "11338307439248427064"
+        },
+        {
+          "file": "apps/client/.next/react-loadable-manifest.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "apps/client/.next/server/app-paths-manifest.json",
+          "hash": "6045270427439857966"
+        },
+        {
+          "file": "apps/client/.next/server/app/page.js",
+          "hash": "8191248385523869764",
+          "deps": [
+            [
+              "npm:next",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/client/.next/server/app/page_client-reference-manifest.js",
+          "hash": "4580544417901805944"
+        },
+        {
+          "file": "apps/client/.next/server/interception-route-rewrite-manifest.js",
+          "hash": "10484309360224763022"
+        },
+        {
+          "file": "apps/client/.next/server/middleware-build-manifest.js",
+          "hash": "10146558356613894909"
+        },
+        {
+          "file": "apps/client/.next/server/middleware-manifest.json",
+          "hash": "9889576824779923310"
+        },
+        {
+          "file": "apps/client/.next/server/middleware-react-loadable-manifest.js",
+          "hash": "9185069726031651908"
+        },
+        {
+          "file": "apps/client/.next/server/next-font-manifest.js",
+          "hash": "16541577805185552134"
+        },
+        {
+          "file": "apps/client/.next/server/next-font-manifest.json",
+          "hash": "11891788324563068681"
+        },
+        {
+          "file": "apps/client/.next/server/pages-manifest.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "apps/client/.next/server/server-reference-manifest.js",
+          "hash": "13062913855343812063"
+        },
+        {
+          "file": "apps/client/.next/server/server-reference-manifest.json",
+          "hash": "15963963992085667341"
+        },
+        {
+          "file": "apps/client/.next/server/vendor-chunks/next.js",
+          "hash": "975027234114631125"
+        },
+        {
+          "file": "apps/client/.next/server/webpack-runtime.js",
+          "hash": "15684240426511333119"
+        },
+        {
+          "file": "apps/client/.next/static/chunks/app-pages-internals.js",
+          "hash": "9314084786783752739"
+        },
+        {
+          "file": "apps/client/.next/static/chunks/app/layout.js",
+          "hash": "7768144760596741694"
+        },
+        {
+          "file": "apps/client/.next/static/chunks/app/page.js",
+          "hash": "14748787885475364451"
+        },
+        {
+          "file": "apps/client/.next/static/chunks/main-app.js",
+          "hash": "17368608270876406348"
+        },
+        {
+          "file": "apps/client/.next/static/chunks/polyfills.js",
+          "hash": "8152964857117933876"
+        },
+        {
+          "file": "apps/client/.next/static/chunks/webpack.js",
+          "hash": "12602978005755211425"
+        },
+        {
+          "file": "apps/client/.next/static/css/app/layout.css",
+          "hash": "14870642224187962423"
+        },
+        {
+          "file": "apps/client/.next/static/development/_buildManifest.js",
+          "hash": "13063724784290855366"
+        },
+        {
+          "file": "apps/client/.next/static/development/_ssgManifest.js",
+          "hash": "17018243955171961484"
+        },
+        {
+          "file": "apps/client/.next/static/webpack/633457081244afec._.hot-update.json",
+          "hash": "10481436618516908015"
+        },
+        {
+          "file": "apps/client/.next/static/webpack/6b866add3306b581.webpack.hot-update.json",
+          "hash": "8773209185785337189"
+        },
+        {
+          "file": "apps/client/.next/static/webpack/app/layout.6b866add3306b581.hot-update.js",
+          "hash": "1344358018004137214"
+        },
+        {
+          "file": "apps/client/.next/static/webpack/webpack.6b866add3306b581.hot-update.js",
+          "hash": "13579747004752609114"
+        },
+        {
+          "file": "apps/client/.next/trace",
+          "hash": "1914779249003564245"
+        },
+        {
+          "file": "apps/client/.next/types/app/layout.ts",
+          "hash": "2563066971536327637",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/client/.next/types/app/page.ts",
+          "hash": "5830787314059003517",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/client/.next/types/cache-life.d.ts",
+          "hash": "12858368115349027927",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/client/.next/types/package.json",
+          "hash": "6094546126370684104"
+        },
         {
           "file": "apps/client/.swcrc",
           "hash": "2742566327615098680"
         },
         {
           "file": "apps/client/Dockerfile",
-          "hash": "2958179038619021188"
+          "hash": "9021835895439805174"
         },
         {
           "file": "apps/client/eslint.config.mjs",
@@ -260,7 +414,7 @@
         },
         {
           "file": "apps/client/package.json",
-          "hash": "12843870739216463205"
+          "hash": "9373508212937552978"
         },
         {
           "file": "apps/client/postcss.config.js",
@@ -268,7 +422,7 @@
         },
         {
           "file": "apps/client/project.json",
-          "hash": "7285331396551704205"
+          "hash": "4182598065286946151"
         },
         {
           "file": "apps/client/public/.gitkeep",
@@ -300,10 +454,221 @@
         },
         {
           "file": "apps/client/tsconfig.json",
-          "hash": "1294184825771213129"
+          "hash": "15678319864375391662"
+        }
+      ],
+      "gateway": [
+        {
+          "file": "apps/gateway/.gitignore",
+          "hash": "12401324665084110282"
+        },
+        {
+          "file": "apps/gateway/Dockerfile",
+          "hash": "14812247641969840830"
+        },
+        {
+          "file": "apps/gateway/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/gateway/package-lock.json",
+          "hash": "4228320836493064284"
+        },
+        {
+          "file": "apps/gateway/package.json",
+          "hash": "8031200520897390956",
+          "deps": [
+            "npm:prisma",
+            "npm:@nestjs-mod/pino",
+            "npm:@nestjs/config",
+            "npm:@nestjs/microservices",
+            "npm:@opensearch-project/opensearch",
+            "npm:@prisma/client",
+            "npm:amqplib",
+            "npm:aws-sdk",
+            "npm:class-transformer",
+            "npm:class-validator",
+            "npm:ioredis",
+            "npm:nestjs-pino",
+            "npm:pino@10.1.0",
+            "npm:pino-pretty"
+          ]
+        },
+        {
+          "file": "apps/gateway/pnpm-lock.yaml",
+          "hash": "15746175943400010624"
+        },
+        {
+          "file": "apps/gateway/prisma.config.ts",
+          "hash": "10271938941577959364",
+          "deps": [
+            "npm:prisma"
+          ]
+        },
+        {
+          "file": "apps/gateway/prisma/migrations/20251101233730_init/migration.sql",
+          "hash": "2785215315500305299"
+        },
+        {
+          "file": "apps/gateway/prisma/migrations/migration_lock.toml",
+          "hash": "872437952673290735"
+        },
+        {
+          "file": "apps/gateway/prisma/prisma.service.ts",
+          "hash": "4488494652581606473",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@prisma/client"
+          ]
+        },
+        {
+          "file": "apps/gateway/prisma/schema.prisma",
+          "hash": "9695538268667264100"
+        },
+        {
+          "file": "apps/gateway/project.json",
+          "hash": "16739627399907376759"
+        },
+        {
+          "file": "apps/gateway/src/app/app.controller.d.ts",
+          "hash": "16564249750445165491"
+        },
+        {
+          "file": "apps/gateway/src/app/app.controller.ts",
+          "hash": "15276891910009544695",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/app/app.module.d.ts",
+          "hash": "10127694934788833983"
+        },
+        {
+          "file": "apps/gateway/src/app/app.module.ts",
+          "hash": "15094330092585703286",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:nestjs-pino"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/app/app.service.d.ts",
+          "hash": "16083067605532550882"
+        },
+        {
+          "file": "apps/gateway/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/gateway/src/cache/redis.service.ts",
+          "hash": "434537349280323172",
+          "deps": [
+            "npm:ioredis"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/logging/cloudwatch.logger.d.ts",
+          "hash": "2025744283814328497",
+          "deps": [
+            "npm:pino@10.1.0"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/logging/cloudwatch.logger.ts",
+          "hash": "14219526019940670755",
+          "deps": [
+            "npm:aws-sdk",
+            "npm:pino@10.1.0"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/logging/logger.provider.d.ts",
+          "hash": "11596227424923278602",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/logging/logger.provider.ts",
+          "hash": "1349830908835389873",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/logging/opensearch.service.d.ts",
+          "hash": "16641230031788147748"
+        },
+        {
+          "file": "apps/gateway/src/logging/opensearch.service.ts",
+          "hash": "14957272901760317490",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@opensearch-project/opensearch"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/main.d.ts",
+          "hash": "16696574029650652404"
+        },
+        {
+          "file": "apps/gateway/src/main.ts",
+          "hash": "10037785210644905355",
+          "deps": [
+            "npm:@nestjs/core",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/messaging/messaging.module.ts",
+          "hash": "14594518979967575752",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/messaging/messaging.service.ts",
+          "hash": "4630165495228461255",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/microservices"
+          ]
+        },
+        {
+          "file": "apps/gateway/src/sagas/user-signup.saga.ts",
+          "hash": "11017395587789273373",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@prisma/client"
+          ]
+        },
+        {
+          "file": "apps/gateway/tsconfig.app.json",
+          "hash": "6642416146672581015"
+        },
+        {
+          "file": "apps/gateway/tsconfig.json",
+          "hash": "3025378044812449119"
+        },
+        {
+          "file": "apps/gateway/webpack.config.js",
+          "hash": "1208971867221163604",
+          "deps": [
+            "npm:copy-webpack-plugin"
+          ]
         }
       ]
     }
   },
-  "externalNodesHash": "18133133102311300371"
+  "externalNodesHash": "13270201819233394896"
 }

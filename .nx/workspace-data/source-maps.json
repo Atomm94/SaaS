@@ -8,46 +8,6 @@
       "apps/client/next.config.js",
       "@nx/next/plugin"
     ],
-    "targets.build": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.options": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.dependsOn": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.cache": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.inputs": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.outputs": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.executor": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.options.cwd": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.options.tty": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build.options.command": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
     "targets.dev": [
       "apps/client/next.config.js",
       "@nx/next/plugin"
@@ -128,14 +88,6 @@
       "apps/client/next.config.js",
       "@nx/next/plugin"
     ],
-    "targets.build-deps": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
-    "targets.build-deps.dependsOn": [
-      "apps/client/next.config.js",
-      "@nx/next/plugin"
-    ],
     "targets.watch-deps": [
       "apps/client/next.config.js",
       "@nx/next/plugin"
@@ -159,66 +111,6 @@
     "targets.watch-deps.options.command": [
       "apps/client/next.config.js",
       "@nx/next/plugin"
-    ],
-    "targets.lint": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "apps/client/eslint.config.mjs",
-      "@nx/eslint/plugin"
     ],
     "name": [
       "apps/client/project.json",
@@ -312,10 +204,6 @@
       "apps/client/package.json",
       "nx/core/package-json"
     ],
-    "$schema": [
-      "apps/client/project.json",
-      "nx/core/project-json"
-    ],
     "sourceRoot": [
       "apps/client/project.json",
       "nx/core/project-json"
@@ -324,9 +212,81 @@
       "apps/client/project.json",
       "nx/core/project-json"
     ],
-    "// targets": [
+    "targets.build": [
       "apps/client/project.json",
       "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "apps/client/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
     ]
   },
   "apps/gateway": {
@@ -343,8 +303,8 @@
       "@nx/eslint/plugin"
     ],
     "targets.lint.cache": [
-      "apps/gateway/eslint.config.mjs",
-      "@nx/eslint/plugin"
+      "nx.json",
+      "nx/target-defaults"
     ],
     "targets.lint.options": [
       "apps/gateway/eslint.config.mjs",
@@ -411,8 +371,8 @@
       "nx/core/project-json"
     ],
     "targets.build.cache": [
-      "apps/gateway/webpack.config.js",
-      "@nx/webpack/plugin"
+      "nx.json",
+      "nx/target-defaults"
     ],
     "targets.build.dependsOn": [
       "apps/gateway/webpack.config.js",
@@ -789,6 +749,22 @@
     "targets.serve.configurations.production.buildTarget": [
       "apps/gateway/project.json",
       "nx/core/project-json"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
     ]
   },
   "libs/shared": {
@@ -805,8 +781,8 @@
       "@nx/eslint/plugin"
     ],
     "targets.lint.cache": [
-      "libs/shared/eslint.config.mjs",
-      "@nx/eslint/plugin"
+      "nx.json",
+      "nx/target-defaults"
     ],
     "targets.lint.options": [
       "libs/shared/eslint.config.mjs",
@@ -939,6 +915,10 @@
     "targets.build.options.assets": [
       "libs/shared/project.json",
       "nx/core/project-json"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
     ],
     "targets.build.cache": [
       "nx.json",
